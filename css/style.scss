@@ -749,6 +749,7 @@ $mobile: 'screen and (max-width:640px)';
 		margin: 0 auto;
 
 		@media #{$mobile} {
+			display: none;
 			width: 100%;
 			margin: 0;
 		}
@@ -780,28 +781,16 @@ $mobile: 'screen and (max-width:640px)';
 					background-size: cover;
 
 					&.banner_1 {
-						background-image: url(./../images/uxdesign/slides/slide_1.png);
-						@media #{$mobile} {
-							background-image: url(./../images/uxdesign/slides/rwd_slide_1.png);
-						}
+						background-image: url(./../images/uxdesign/slides/Group_4.png);
 					}
 					&.banner_2 {
-						background-image: url(./../images/uxdesign/slides/slide_2.jpg);
-						@media #{$mobile} {
-							background-image: url(./../images/uxdesign/slides/rwd_slide_2.png);
-						}
+						background-image: url(./../images/uxdesign/slides/Group_3.png);
 					}
 					&.banner_3 {
-						background-image: url(./../images/uxdesign/slides/slide_3.jpg);
-						@media #{$mobile} {
-							background-image: url(./../images/uxdesign/slides/rwd_slide_3.png);
-						}
+						background-image: url(./../images/uxdesign/slides/Group_2.png);
 					}
 					&.banner_4 {
-						background-image: url(./../images/uxdesign/slides/slide_4.jpg);
-						@media #{$mobile} {
-							background-image: url(./../images/uxdesign/slides/rwd_slide_4.png);
-						}
+						background-image: url(./../images/uxdesign/slides/Group_1.png);
 					}
 				} //end of li
 			} //end of .slides-container

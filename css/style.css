@@ -674,6 +674,7 @@
 }
 @media screen and (max-width:640px) {
   #wrap #uxdesign {
+    display: none;
     width: 100%;
     margin: 0;
   }
@@ -704,36 +705,16 @@
   background-size: cover;
 }
 #wrap #uxdesign > .slides > .slides-container > li.banner_1 {
-  background-image: url(./../images/uxdesign/slides/slide_1.png);
-}
-@media screen and (max-width:640px) {
-  #wrap #uxdesign > .slides > .slides-container > li.banner_1 {
-    background-image: url(./../images/uxdesign/slides/rwd_slide_1.png);
-  }
+  background-image: url(./../images/uxdesign/slides/Group_4.png);
 }
 #wrap #uxdesign > .slides > .slides-container > li.banner_2 {
-  background-image: url(./../images/uxdesign/slides/slide_2.jpg);
-}
-@media screen and (max-width:640px) {
-  #wrap #uxdesign > .slides > .slides-container > li.banner_2 {
-    background-image: url(./../images/uxdesign/slides/rwd_slide_2.png);
-  }
+  background-image: url(./../images/uxdesign/slides/Group_3.png);
 }
 #wrap #uxdesign > .slides > .slides-container > li.banner_3 {
-  background-image: url(./../images/uxdesign/slides/slide_3.jpg);
-}
-@media screen and (max-width:640px) {
-  #wrap #uxdesign > .slides > .slides-container > li.banner_3 {
-    background-image: url(./../images/uxdesign/slides/rwd_slide_3.png);
-  }
+  background-image: url(./../images/uxdesign/slides/Group_2.png);
 }
 #wrap #uxdesign > .slides > .slides-container > li.banner_4 {
-  background-image: url(./../images/uxdesign/slides/slide_4.jpg);
-}
-@media screen and (max-width:640px) {
-  #wrap #uxdesign > .slides > .slides-container > li.banner_4 {
-    background-image: url(./../images/uxdesign/slides/rwd_slide_4.png);
-  }
+  background-image: url(./../images/uxdesign/slides/Group_1.png);
 }
 #wrap #uxdesign > .slides > .slides-pagination {
   display: flex;
