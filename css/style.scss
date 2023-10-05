@@ -749,15 +749,24 @@ $mobile: 'screen and (max-width:640px)';
 		margin: 0 auto;
 
 		@media #{$mobile} {
-			display: none;
 			width: 100%;
 			margin: 0;
+		}
+
+		> .intro {
+			font-size: 17px;
+			margin-top: -15px;
+			margin-bottom: 5px;
+			line-height: 1;
 		}
 
 		> .slides {
 			overflow: hidden;
 			position: relative;
-			height: 440px;
+			height: 720px;
+			@media #{$mobile} {
+				height: 440px;
+			}
 
 			> .slides-container {
 				display: flex;
@@ -775,22 +784,28 @@ $mobile: 'screen and (max-width:640px)';
 
 				> li {
 					width: 25%;
-					height: 440px;
+					height: 720px;
 					text-indent: -9999px;
 					background-position: center center;
 					background-size: cover;
+					@media #{$mobile} {
+						height: 440px;
+					}
 
 					&.banner_1 {
-						background-image: url(./../images/uxdesign/slides/Group_4.png);
+						background-image: url(./../images/uxdesign/slides/woman.jpg);
 					}
 					&.banner_2 {
-						background-image: url(./../images/uxdesign/slides/Group_3.png);
+						background-image: url(./../images/uxdesign/slides/idea.png);
+						@media #{$mobile} {
+							background-position-y: 500px;
+						}
 					}
 					&.banner_3 {
-						background-image: url(./../images/uxdesign/slides/Group_2.png);
+						background-image: url(./../images/uxdesign/slides/board.jpg);
 					}
 					&.banner_4 {
-						background-image: url(./../images/uxdesign/slides/Group_1.png);
+						background-image: url(./../images/uxdesign/slides/thankyou.jpg);
 					}
 				} //end of li
 			} //end of .slides-container

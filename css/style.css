@@ -674,15 +674,25 @@
 }
 @media screen and (max-width:640px) {
   #wrap #uxdesign {
-    display: none;
     width: 100%;
     margin: 0;
   }
 }
+#wrap #uxdesign > .intro {
+  font-size: 17px;
+  margin-top: -15px;
+  margin-bottom: 5px;
+  line-height: 1;
+}
 #wrap #uxdesign > .slides {
   overflow: hidden;
   position: relative;
-  height: 440px;
+  height: 720px;
+}
+@media screen and (max-width:640px) {
+  #wrap #uxdesign > .slides {
+    height: 440px;
+  }
 }
 #wrap #uxdesign > .slides > .slides-container {
   display: flex;
@@ -699,22 +709,32 @@
 }
 #wrap #uxdesign > .slides > .slides-container > li {
   width: 25%;
-  height: 440px;
+  height: 720px;
   text-indent: -9999px;
   background-position: center center;
   background-size: cover;
 }
+@media screen and (max-width:640px) {
+  #wrap #uxdesign > .slides > .slides-container > li {
+    height: 440px;
+  }
+}
 #wrap #uxdesign > .slides > .slides-container > li.banner_1 {
-  background-image: url(./../images/uxdesign/slides/Group_4.png);
+  background-image: url(./../images/uxdesign/slides/woman.jpg);
 }
 #wrap #uxdesign > .slides > .slides-container > li.banner_2 {
-  background-image: url(./../images/uxdesign/slides/Group_3.png);
+  background-image: url(./../images/uxdesign/slides/idea.png);
+}
+@media screen and (max-width:640px) {
+  #wrap #uxdesign > .slides > .slides-container > li.banner_2 {
+    background-position-y: 500px;
+  }
 }
 #wrap #uxdesign > .slides > .slides-container > li.banner_3 {
-  background-image: url(./../images/uxdesign/slides/Group_2.png);
+  background-image: url(./../images/uxdesign/slides/board.jpg);
 }
 #wrap #uxdesign > .slides > .slides-container > li.banner_4 {
-  background-image: url(./../images/uxdesign/slides/Group_1.png);
+  background-image: url(./../images/uxdesign/slides/thankyou.jpg);
 }
 #wrap #uxdesign > .slides > .slides-pagination {
   display: flex;
