@@ -381,6 +381,11 @@ $mobile: 'screen and (max-width:640px)';
 	} //end of header ~ section
 
 	#aboutme {
+		background-color: darken($sec-color-2, 10%);
+		> h2 {
+			color: $pri-color-3;
+		}
+
 		> .container {
 			display: flex;
 			flex-direction: row-reverse;
@@ -424,15 +429,12 @@ $mobile: 'screen and (max-width:640px)';
 
 					> .myphoto {
 						overflow: hidden;
-						background-image: url(./../images/aboutme/photo-frame.png);
-						background-position: 0 bottom;
-						background-size: contain;
-						background-repeat: no-repeat;
 
 						> img {
 							display: block;
 							position: relative;
-							z-index: -1;
+							top: 70px;
+							// z-index: -1;
 							width: 120%;
 							margin: -100px 0 0 -30px;
 						}
@@ -443,6 +445,7 @@ $mobile: 'screen and (max-width:640px)';
 
 						> li {
 							height: 45px;
+							color: $pri-color-3;
 							font-weight: 300;
 							font-size: 16px;
 							line-height: 45px;
@@ -474,18 +477,21 @@ $mobile: 'screen and (max-width:640px)';
 
 					> h3 {
 						margin-bottom: 30px;
+						color: $pri-color-3;
 						font-weight: 500;
 						font-size: 32px;
 					}
 
 					> h4 {
 						margin-bottom: 14px;
+						color: $pri-color-3;
 						font-size: 17px;
 					}
 
 					> p {
 						margin-bottom: 20px;
-						font-weight: 400;
+						color: $pri-color-3;
+						font-weight: 100;
 						font-size: 17px;
 						line-height: 1.8;
 
@@ -506,21 +512,16 @@ $mobile: 'screen and (max-width:640px)';
 							background-color: $point-color-2;
 						}
 					} //end of p
-
 					> .ican {
-						margin-left: 700px;
-						margin-top: 140px;
+						margin-top: 50px;
 
-						@media #{$mobile} {
-							margin-left: 0;
-							margin-top: 50px;
-						}
 						> li {
+							color: $pri-color-3;
 							font-size: 16px;
 							line-height: 40px;
 
 							&:before {
-								@media #{$mobile} {
+								@media #{$mobile}{
 									color: #52b3d9;
 								}
 								margin-right: 10px;
@@ -553,98 +554,69 @@ $mobile: 'screen and (max-width:640px)';
 				}
 			} //end of h3
 
-			> ol {
-				display: flex;
-				justify-content: space-between;
-
-				@media #{$mobile} {
-					display: block;
-					width: 90%;
-					margin: 0 auto;
-				}
-				> li {
-					display: flex;
-					flex-direction: column;
-					justify-content: center;
-					width: 45%;
-					height: 150px;
-
-					background-repeat: no-repeat;
-					box-sizing: border-box;
-
-					@media #{$mobile} {
-						width: 100%;
-
-						&:first-child {
-							margin-bottom: 40px;
-						}
-					}
-
-					> h4 {
-						margin-bottom: 30px;
-						font-weight: 400;
-						font-size: 24px;
-					}
-
-					> p {
-						line-height: 1.6;
-					}
-				} //end of li
-			} //end of ol
-
 			&.skill-1 li:first-child {
 				width: 150px;
 				height: 150px;
-				margin-left: 157px;
+				margin-left: 700px;
+				@media #{$mobile} {
+					margin-left: 0;
+				}
 				border-radius: 100px 100px;
 				background-size: cover;
 				background-image: url(./../images/uxui.png);
-
 				> h4,
 				p {
-					width: 420px;
-					margin-left: 200px;
-				}
-
-				@media #{$mobile} {
-					margin-left: -5px;
+					width: 500px;
+					padding-left: 200px;
+					padding-top: 20px;
+					font-size: 18px;
+					@media #{$mobile} {
+						width: 250px;
+						font-size: 15px;
+					}
 				}
 			}
 			&.skill-1 li:last-child {
 				width: 150px;
 				height: 150px;
-				margin-right: 710px;
+				margin-left: 700px;
+				@media #{$mobile} {
+					margin-left: 0;
+				}
 				background-size: cover;
 				background-image: url(./../images/html.png);
-
 				> h4,
 				p {
-					width: 420px;
-					margin-left: 180px;
+					width: 500px;
+					padding-left: 200px;
+					padding-top: 20px;
+					font-size: 18px;
+					@media #{$mobile} {
+						width: 250px;
+						font-size: 13px;
+					}
 				}
 			}
 
 			&.skill-2 li:first-child {
-				width: 170px;
+				width: 150px;
 				height: 150px;
-				margin-left: 157px;
+				margin-left: 700px;
+				@media #{$mobile} {
+					margin-left: 0;
+				}
+				background-position: -20px;
 				background-size: cover;
 				background-image: url(./../images/css.png);
-
 				> h4,
 				p {
-					width: 420px;
-					margin-left: 200px;
-				}
-				@media #{$mobile} {
-					width: 150px;
-					height: 150px;
-					margin-left: -5px;
-					background-position-x: -20px;
-					> h4,
-					p {
-						width: 400px;
-						margin-left: 180px;
+					width: 500px;
+					padding-left: 200px;
+					padding-top: 20px;
+					font-size: 18px;
+					@media #{$mobile} {
+						width: 250px;
+						font-size: 13px;
 					}
 				}
 			}
@@ -652,14 +624,23 @@ $mobile: 'screen and (max-width:640px)';
 			&.skill-2 li:last-child {
 				width: 150px;
 				height: 150px;
-				margin-right: 710px;
+				margin-left: 700px;
+				@media #{$mobile} {
+					margin-left: 0;
+				}
 				background-size: cover;
 				background-image: url(./../images/coding.png);
 				background-position-x: -57px;
 				> h4,
 				p {
-					width: 420px;
-					margin-left: 180px;
+					width: 500px;
+					padding-left: 200px;
+					padding-top: 20px;
+					font-size: 18px;
+					@media #{$mobile} {
+						width: 250px;
+						font-size: 13px;
+					}
 				}
 			}
 		} //end of article
@@ -865,6 +846,12 @@ $mobile: 'screen and (max-width:640px)';
 	} //end of #uxdesign
 
 	> #portfolio {
+		height: 720px;
+		margin-top: 100px;
+		background-color: darken($sec-color-2, 10%);
+		> h2 {
+			color: $pri-color-3;
+		}
 		> article {
 			width: 1200px;
 			margin: 0 auto;
@@ -903,6 +890,8 @@ $mobile: 'screen and (max-width:640px)';
 					> li {
 						overflow: hidden;
 						width: 120px;
+						color: draken($sec-color-3, 70%);
+						background-color: $sec-color-3;
 						border: 1px solid $sec-color-3;
 						border-radius: 20px;
 
@@ -963,6 +952,7 @@ $mobile: 'screen and (max-width:640px)';
 						> figcaption {
 							width: 500px;
 							padding-top: 35px;
+							color: $pri-color-3;
 
 							@media #{$mobile} {
 								width: 80%;
@@ -1014,7 +1004,7 @@ $mobile: 'screen and (max-width:640px)';
 
 									&.proc {
 										margin-right: 10px;
-										border: 1px solid $sec-color-1;
+										border: 2px dashed $sec-color-1;
 										box-sizing: border-box;
 
 										@media #{$mobile} {
